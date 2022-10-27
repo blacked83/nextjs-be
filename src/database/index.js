@@ -4,6 +4,7 @@ import * as config from '@/config/sequelize';
 
 // import models
 import userModel from './models/user';
+import todoModel from './models/todo';
 
 // Configuration
 const env = process.env.NODE_ENV;
@@ -15,6 +16,7 @@ const sequelize = new Sequelize(sequelizeConfig);
 // Import all model files
 const modelDefiners = [
   userModel,
+  todoModel
 ];
 
 // eslint-disable-next-line no-restricted-syntax
